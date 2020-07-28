@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Кино-билеты </title>
 </head>
+
+<style>
+    th, td {
+        border: 1px solid black;
+        padding: 5px 10px;
+    }
+</style>
 <body>
     <div>
         <header>
@@ -30,8 +37,7 @@
         <div>
             <!--Второй блок. Добро пожаловать и преимущества -->
                   
-            <div>
-                <p><a name="benefit"></a></p> 
+            <div id="benefit" >
                 <section>
                    <h2>Почему мы?</h2> 
                 </section> 
@@ -64,9 +70,48 @@
             </div> 
             <div>
                 Начало сеанса Название фильма Жанр <br>
-                10:00 <br> <a title="Человек-паук на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank"> Человек-паук</a> <br> фантастика, боевик, приключения <br>
-                12:00<br><a title="Собачья жизнь-2 на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank"> Собачья жизнь-2</a> <br> фантастика, боевик, драма <br>
-                14:00<br><a title="Люди в черном: Интернешнл на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank"> Люди в черном: Интернешнл</a> <br> фантастика, боевик, комедия <br>
+                <table>
+                    <caption>Расписание сеансов</caption>
+                    <thead>
+                        <tr>
+                            <td>Чек</td>
+                            <td>Начало сеанса</td>
+                            <td>Название фильма</td>
+                            <td>Жанр</td>
+                            <td>Заказать билет</td>
+                        </tr>
+                    </thead> 
+                    <tr>
+                        <td>Чек</td>
+                        <td>10:00</td>
+                        <td> <a title="Люди в черном: Интернешнл на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank"> Люди в черном: Интернешнл </a></td>
+                        <td>фантастика</td>
+                        <td>Заказать билет</td>
+                    </tr>
+                    <tr>
+                        <td>Чек</td>
+                        <td>12:00</td>
+                        <td>История игрушек-4</td>
+                        <td>экшн</td>
+                        <td>Заказать билет</td>
+                    </tr>
+                    <tr>
+                        <td>Чек</td>
+                        <td>14:00</td>
+                        <td><a title="Собачья жизнь-2 на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank">Собачья жизнь-2</a></td>
+                        <td>драма</td>
+                        <td>Заказать билет</td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td>Чек</td>
+                            <td>16:00</td>
+                            <td> <a title="Человек-паук на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank">Человек-паук </a></td>
+                            <td>боевик</td>
+                            <td>Заказать билет</td>
+                        </tr>
+                     </tfoot>    
+                </table>                               
             </div>
             <p> Примечание к таблице. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt! </span></p>            
         </section>
@@ -78,9 +123,8 @@
          <p>Абзац 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit <sup>1</sup>. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!</p>
          <p>Примечание 1. <sub>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam</sub></p>
         </section>
-        <section>
+        <section id="films">
             <!--Пятый блок. Перечень фильмов -->
-            <p><a name="films"></a></p>
             <h2>Фильмы</h2>
             <section>
                 <p> <a href="https://www.kinopoisk.ru/film/838/" target="_blank"> Человек-паук</a> <br>
@@ -95,15 +139,49 @@
             </section>
             <p>Примечание. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!</p>
          </section>
-        <section>
-            <p><a name="order"></a></p>
-            <h2>Форма заказа билетов</h2>    
+        <section id="order">
+            <h2>Форма заказа билетов</h2>
+            
+            <form>
+                <div><input type="text" placeholder="Логин" name="login"> <br></div>
+                <div><input type="password" placeholder="Пароль" name="password"> <br></div>
+                <div><input type="email" placeholder="example@example.com" name="email"> <br></div>
+
+                <div><select name="choice" id="">
+                    <option value="1"> Выбор 1</option> 
+                    <option value="2"> Выбор 2</option> 
+                    <option value="3"> Выбор 3</option> 
+                </select> <br>
+                </div>
+
+                <div> 
+                    <input type="radio" name="radio"> Выбор 1 <br>
+                    <input type="radio" name="radio"> Выбор 2 <br>
+                    <input type="radio" name="radio"> Выбор 3 <br>
+                    <input type="radio" name="radio"> Выбор 4 <br>
+                    <input type="radio" name="radio"> Выбор 5 <br>
+                    <input type="radio" name="radio"> Выбор 6 <br>
+                </div>  
+
+                <div>
+                    <textarea name="comment" placeholder="Комментарий"></textarea> <br>
+                </div>
+
+                <div>                    
+                    <input type="checkbox" id="согласие" name="file"> 
+                    <label for="согласие">Подтверждаю согласие на обработку персональных данных в соответствии с Политикой обработки персональных данных данного сайта </label>
+                </div>
+
+                <input type="file"> <br>
+
+                <input type="submit"><br> 
+                <button type="submit"> Заказать </button> <br>
+            </form>
         </section>
-         <footer>
+         <footer id="contacts">
             <!--Шестой блок. Адреса и явки -->
-            <p><a name="contacts"></a></p>
             <p>+7-927-333-4444 <br>
-            popcorn@yandex.ru<br>
+            popcorn@popcorn.ru<br>
             2020 г.</p>
             <p><a href="https://www.facebook.com/" target="_blank">facebook </a></p>
             <p> <a href="https://twitter.com/" target="_blank">twitter </a></p>
