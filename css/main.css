@@ -27,10 +27,6 @@ body {
     margin: 0 auto;
 }
 
-.movie-list {
-
-}
-
 .movie-list__header {
     color: #252525;
     font-size: 50px;
@@ -44,7 +40,6 @@ body {
     border-collapse: collapse;
     border-radius: 15px;
     overflow: hidden;
-    text-align: center ;
     margin: 40px
 }
 
@@ -53,8 +48,6 @@ color: #ffffff;
 background-color: #a3cc40;
 font-size: 30px;
 font-weight: 800;
-height: 75px;
-
 }
 
 .line1 {
@@ -62,8 +55,7 @@ height: 75px;
     background: #373737;
     font-size: 22px;
     font-weight: 400;
-    height: 75px;
-    
+      
   }
 
 .line2 {
@@ -71,7 +63,7 @@ height: 75px;
     background: #4b4d4f;
     font-size: 22px;
     font-weight: 400;
-    height: 75px;
+    
   }
 
   .line3 {
@@ -79,7 +71,7 @@ height: 75px;
     background: #6c6c6c;
     font-size: 22px;
     font-weight: 400;
-    height: 75px;
+    
   }
 
   
@@ -95,5 +87,28 @@ height: 75px;
     font-weight: 300;
     text-align: center;
     vertical-align: middle;
-    width: 90%;
+    color: #b0b0b0;
+}
+
+.center {
+  text-align: center;
+}
+
+.arrow_up {
+  widows: 0px;
+      height: 0px;
+      
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 13px solid #ffffff;
+  
+}
+ 
+.arrow_down {
+  width:0;
+      height: 0;
+      
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 13px solid #ffffff;
 }
