@@ -44,33 +44,56 @@ body {
     border-collapse: collapse;
     border-radius: 15px;
     overflow: hidden;
-    vertical-align: top;
-    text-align: left;
-
+    text-align: center ;
+    margin: 40px
 }
 
-.movie-list__table th {
+.movie-list__table_th {
 color: #ffffff;
 background-color: #a3cc40;
 font-size: 30px;
 font-weight: 800;
-padding: 20px;
-text-align: left;
+height: 75px;
+
 }
 
-tr:nth-child(odd) {
+.line1 {
     color: #ffffff;
     background: #373737;
-    
-  }
-
-  tr:nth-child(even) {
-    color: #ffffff;
-    background: #4b4d4f;
-    
-  }
-
-  tr{
     font-size: 22px;
     font-weight: 400;
+    height: 75px;
+    
   }
+
+.line2 {
+    color: #ffffff;
+    background: #4b4d4f;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+  }
+
+  .line3 {
+    color: #ffffff;
+    background: #6c6c6c;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+  }
+
+  
+  a {
+    text-decoration:none;
+    color: #ffffff;
+  }
+
+  .remark {
+
+    
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    width: 90%;
+}
