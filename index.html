@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кино-билеты</title>
-    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -43,67 +45,67 @@
                 </article>   
                 <section>
                  <h3>Большие экраны</h3>
-                 <img src="strip_icon_1.jpg" alt="большой экран" title="Большие экраны в нашем кинотеатре">
+                 <img src="images/strip_icon_1.jpg" alt="большой экран" title="Большие экраны в нашем кинотеатре">
                  <p> Описание к большим экранам. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</p>
                 </section> 
                 <section>
                  <h3>Объемный звук</h3>
-                 <img src="sound_icon_2.jpg" alt="объемный звук" title="Объемный звук в нашем кинотеатре">
+                 <img src="images/sound_icon_2.jpg" alt="объемный звук" title="Объемный звук в нашем кинотеатре">
                  <p>Описание к объемному звуку. Lorem ipsum dolor sit amet.</p> 
                 </section>
                 <section>
                  <h3>Удобные кресла</h3>
-                 <img src="seat_icon_3.jpg" alt="удобные кресла" title="Комфортные кресла в нашем кинотеатре">
+                 <img src="images/seat_icon_3.jpg" alt="удобные кресла" title="Комфортные кресла в нашем кинотеатре">
                  <p>Описание к удобным креслам. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</p>
                 </section>   
             </div>
         </div>
         <section>
             <!--Третий блок. Таблица с расписанием -->
-        <div>
-            <div> 
-                <h2>Выберите фильм </h2>
-            </div> 
-            <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Time</th>
-                            <th>Stuff that will happen</th>
-                            <th>Заказать билет</th>                            
-                        </tr>
-                    </thead> 
-                    <tr>                        
-                        <td>10am - 12pm</td>
-                        <td> <a title="Люди в черном: Интернешнл на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank"> Sessions by honorable guests and Speakers</a></td>                        
-                        <td>Заказать билет</td>
-                    </tr>
-                    <tr>                    
-                        <td>12pm - 02pm</td>
-                        <td>Introduction and presentations about Envato</td>
-                        <td>Заказать билет</td>
-                    </tr>
-                    <tr>                       
-                        <td>02pm - 03pm</td>
-                        <td><a title="Собачья жизнь-2 на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank">Break and Mingle time with the authors</a></td>                        
-                        <td>Заказать билет</td>
-                    </tr>
-                    <tfoot>
-                        <tr>                            
-                            <td>03pm - 05pm</td>
-                            <td> <a title="Человек-паук на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank">Portfolio Review, Rewards and Ending Presentation </a></td>
-                            <td>Заказать билет</td>
-                        </tr>
-                     </tfoot>    
-                </table>                               
+        <div class="container">
+            <div class="movie-list">
+                <h2 class="movie-list__header">Выберите фильм </h2>
+                <div>
+                    <table class="movie-list__table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Stuff that will happen</th>
+                                <th> Order</th>                            
+                            </tr>
+                        </thead> 
+                        <tbody>
+                            <tr>                        
+                                <td>10am - 12pm</td>
+                                <td> <a title="Люди в черном: Интернешнл на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank"> Sessions by honorable guests and Speakers</a></td>                        
+                                <td>Кнопка</td>
+                            </tr>
+                            <tr>                    
+                                <td>12pm - 02pm</td>
+                                <td>Introduction and presentations about Envato</td>
+                                <td>Кнопка</td>
+                            </tr>
+                            <tr>                       
+                                <td>02pm - 03pm</td>
+                                <td><a title="Собачья жизнь-2 на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank">Break and Mingle time with the authors</a></td>                        
+                                <td>Кнопка</td>
+                            </tr>
+                            <tr>                            
+                                <td>03pm - 05pm</td>
+                                <td> <a title="Человек-паук на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank">Portfolio Review, Rewards and Ending Presentation </a></td>
+                                <td>Кнопка</td>
+                            </tr>
+                        </tbody> 
+                    </table>                               
+                </div>
+                <p> Примечание к таблице. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt! </span></p>            
             </div>
-            <p> Примечание к таблице. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt! </span></p>            
         </div>
         </section>
         <section>
             <!--Четвертый блок. Подарок -->
          <h2>Подарок каждому!</h2>        
-         <img src="present_img.jpg" alt="подарок за билет в кино" title="Получите подарок">
+         <img src="images/present_img.jpg" alt="подарок за билет в кино" title="Получите подарок">
          <p> Абзац 1 <span style="text-decoration: line-through;">Lorem ipsum dolor sit amet,consectetur adipisicing elit.</span>   Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!</p> 
          <p>Абзац 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit <sup>1</sup>. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!</p>
          <p>Примечание 1. <sub>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam</sub></p>
@@ -113,13 +115,13 @@
             <h2>Фильмы</h2>
             <section>
                 <p> <a href="https://www.kinopoisk.ru/film/838/" target="_blank"> Человек-паук</a> <br>
-                <img src="spiderman.jpg" alt="Человек-паук,  билет в кино" title="Человек-паук"><br> 
+                <img src="images/spiderman.jpg" alt="Человек-паук,  билет в кино" title="Человек-паук"><br> 
                 Описание Человека-паука. Lorem ipsum dolor sit amet, consectetur</p>
                 <p> <a href="https://www.kinopoisk.ru/film/693730/" target="_blank"> Люди в черном: Интернешнл </a> <br>
-                <img src="mib.jpg" alt="Люди в черном, билет в кино" title="Люди в черном: Интернешнл"><br>
+                <img src="images/mib.jpg" alt="Люди в черном, билет в кино" title="Люди в черном: Интернешнл"><br>
                 Описание Люди в черном: Интернешнл. Lorem ipsum dolor sit amet, consectetur</p>
                 <p> <a href="https://www.kinopoisk.ru/film/1122114/" target="_blank"> Собачья жизнь-2 </a> <br>
-                <img src="doglife.jpg" alt="Собачья жизнь-2, билет в кино" title="Собачья жизнь-2"><br>
+                <img src="images/doglife.jpg" alt="Собачья жизнь-2, билет в кино" title="Собачья жизнь-2"><br>
                 Описание Собачья жизнь-2. Lorem ipsum dolor sit amet, consectetur</p>                
             </section>
             <p>Примечание. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!</p>
