@@ -1,5 +1,11 @@
 body {
-  font-family: 'roboto', sans-serif
+  font-family: 'roboto', sans-serif;
+  min-width: 320;
+  max-width: 1920;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-text-size-adjust: 100%;
+  
 }
 
 @font-face {
@@ -23,10 +29,64 @@ body {
 
 }
 
+@font-face {
+  src: url('../fonts/Roboto-Thin.ttf');
+  format: ('truetype');
+  font-weight: 100;
+
+}
+
 .container {
   max-width: 1030px;
   margin: 0 auto;
 }
+
+.block01 {
+  background: url("../images/bg.jpg") no-repeat top center / cover;
+  min-height: 100vh;
+}
+
+.block01__navigation {
+  text-align: right;
+}
+
+.block01__navigation li {
+  display: inline-block;
+}
+.block01__navigation li+li {
+  margin-left: 44px;
+}
+
+.block01__navigation a {
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.block01__navigation a:hover {
+color: yellow;
+}
+
+.block01__welcome_words {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.block01__welcome_words h1 {
+  font-size: 80px;
+  font-weight: 100;
+}
+
+.block01__welcome_words p {
+  font-size: 50px;
+  font-weight: 300;
+}
+
 
 .movie-list__header {
   color: #252525;
@@ -113,11 +173,6 @@ table td:last-child {
 }
 
 
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
 .remark {
 
 
@@ -159,3 +214,4 @@ a {
   padding: 40px 100px 0;
 
 }
+
