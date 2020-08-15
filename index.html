@@ -22,6 +22,7 @@
                     <li><a href="#benefit">ПРЕИМУЩЕСТВА </a> </li>
                     <li><a href="#films">ФИЛЬМЫ </a> </li>
                     <li><a href="#contacts">КОНТАКТЫ </a></li>
+                </ul>
             </nav> 
             <div style="text-align: right;">
                 Ваш город: <u>Москва</u>
@@ -36,7 +37,7 @@
                   
             <div id="benefit" >
                 <section>
-                   <h2>Почему мы?</h2> 
+                   <h2 class="movie-list__header">Почему мы?</h2> 
                 </section> 
                 <article>
                     <h3>Добро пожаловать!</h3>
@@ -67,41 +68,41 @@
                 <h2 class="movie-list__header">Выберите фильм </h2>
                 <div>
                     <table class="movie-list__table">
+                        <div class="radius">
                         <thead>
                             <tr class="movie-list__table_th">
-                                <th> Time <b class="arrow_up"> </b></th>
+                                <th> Time <span class="arrow_wrapper"> <div class="arrow_up"></div> </span></th>
                                 <th>Stuff that will happen <b class="arrow_down"> </b></th>
                                 <th> Order</th>                            
                             </tr>
                         </thead> 
                         <tbody>
-                            <tr class="line1">                        
-                                <td class="center"> 10am - 12pm</td>
+                            <tr>                        
+                                <td > 10am - 12pm</td>
                                 <td> <a title="Люди в черном: Интернешнл на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank"> Sessions by honorable guests and Speakers</a></td>                        
                                 <td>Кнопка</td>
                             </tr>
-                            <tr class="line2">                    
-                                <td class="center" >12pm - 02pm</td>
+                            <tr>                    
+                                <td >12pm - 02pm</td>
                                 <td>Introduction and presentations about Envato</td>
                                 <td>Кнопка</td>
                             </tr>
                             <tr class="line3">                       
-                                <td class="center"> 02pm - 03pm</td>
+                                <td > 02pm - 03pm</td>
                                 <td><a title="Собачья жизнь-2 на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank">Break and Mingle time with the authors</a></td>                        
                                 <td>Кнопка</td>
                             </tr>
-                            <tr class="line1">                            
-                                <td class="center">03pm - 05pm</td>
+                            <tr>                            
+                                <td >03pm - 05pm</td>
                                 <td> <a title="Человек-паук на кинопоиске" href="https://www.kinopoisk.ru/film/838/" target="_blank">Portfolio Review, Rewards and Ending Presentation </a></td>
                                 <td>Кнопка</td>
                             </tr>
-                        </tbody> 
-                        <tfoot>
-                            <tr class="remark">                            
-                                <td colspan="3"> Примечание к таблице. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt! </td>                                
-                            </tr>
-                        </tfoot>
-                    </table>                               
+                        </tbody>
+                        </div> 
+                        </table>    
+                       <div class="remark">                            
+                                <p> Примечание к таблице. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt! </p>                                
+                        </div>                           
                 </div>                      
             </div>
         </div>
@@ -116,7 +117,7 @@
         </section>
         <section id="films">
             <!--Пятый блок. Перечень фильмов -->
-            <h2>Фильмы</h2>
+            <h2 class="movie-list__header">Фильмы</h2>
             <section>
                 <p> <a href="https://www.kinopoisk.ru/film/838/" target="_blank"> Человек-паук</a> <br>
                 <img src="images/spiderman.jpg" alt="Человек-паук,  билет в кино" title="Человек-паук"><br> 
