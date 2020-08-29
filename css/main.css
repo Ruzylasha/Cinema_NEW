@@ -36,15 +36,34 @@ body {
 
 }
 
+html {
+  font-size: 20px;  /*20px при верстке установить: 20/1367=1.46vw */
+}
+
 .container {
-  max-width: 1030px;
+  max-width: 53rem;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0.75rem;
+  
 }
 
 .block01 {
   background: url("../images/bg.jpg") no-repeat top center / cover;
   min-height: 100vh;
+  position: relative;
+}
+
+.block01:after {
+content: "";
+position: absolute;
+display: block;
+
+width: 0;
+height: 0;
+border-top: 6rem solid transparent;
+border-right: 100vw solid #fff;
+left: 0;
+bottom: 0;
 }
 
 .block01__navigation {
@@ -55,11 +74,11 @@ body {
   display: inline-block;
 }
 .block01__navigation li+li {
-  margin-left: 44px;
+  margin-left: 2.2rem;
 }
 
 .block01__navigation a {
-  font-size: 15px;
+  font-size: 0.75rem;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 300;
@@ -72,26 +91,48 @@ color: yellow;
 }
 
 .block01__welcome_words {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
   text-align: center;
   color: #ffffff;
 }
 
 .block01__welcome_words h1 {
-  font-size: 80px;
+  font-size: 4rem;
+  font-family: Roboto;
   font-weight: 100;
+  line-height: 1em;
+  margin: 0 0 0.5rem;
 }
 
 .block01__welcome_words p {
-  font-size: 50px;
+  font-size: 2.5rem;
   font-weight: 300;
+}
+.block01__city {
+  padding: 1.1rem 0 0;
+}
+
+.block01__city span {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 0.75rem;
+}
+.block01__city a {
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 0.75rem;
+}
+
+.block01__logoimage {
+  width: 9.4rem;
 }
 
 .block02__plus {
 float: left;
 width: 30.33%;
-padding: 0 15px;
+padding: 0 0.75rem;
 }
 
 .clear {
@@ -100,11 +141,11 @@ padding: 0 15px;
 
 .block02__pluses {
   overflow: hidden;
-  margin: 0 -15px;
+  margin: 0 -0.75rem;
 }
 
 .block02__image-wrap {
-  height: 210px;
+  height: 10.5rem;
   position: relative;
 }
 
@@ -121,12 +162,12 @@ padding: 0 15px;
 
 .block02__welcome {
   position: absolute;
-  right: 0;
-  top: 500px;
-  width: 500px;
+  right: 2.5rem;
+  top: 25rem;
+  width: 25rem;
   background: #ffffff;
   box-shadow: 0px 1px 2px 0px  rgba(35, 31, 32, 0.65);
-  padding: 40px 30px;
+  padding: 2rem 1.5rem;
   z-index: 2;
 }
 
@@ -141,13 +182,13 @@ padding: 0 15px;
 }
 
 .block05__movie1 {
-  padding: 23px;
+  padding: 1.15rem;
   
 }
 
 .block05__relative {
   position: relative;
-  border-radius: 15px;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -158,29 +199,34 @@ padding: 0 15px;
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 24px;
+  padding: 1.2rem 1.2rem 3rem;
+  transform: translateY(100%);
+  transition: 0.4s;
 
 }
 
+.block05__relative:hover .block05__descr {
+  transform: translateY(0);
+}
 .block05__text2 {
   color: white;
-  font-size: 35px;
+  font-size: 1,75rem;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
 }
 
 .block05__sep {
-  width: 84px;
-  height: 6px;
+  width: 4.2rem;
+  height: 0.3rem;
   background: #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .block05__text3 {
   color: white;
-  font-size: 18px;
+  font-size: 0.9rem;
   font-weight: 300;
-  margin-bottom: 70px;
+  margin-bottom: 3.5rem;
 }
 
 .block05 a {
@@ -194,105 +240,125 @@ padding: 0 15px;
 
 .block05__links {
   position: absolute;
-  bottom: 24px;
-  left: 24px;
+  bottom: 1.2rem;
+  left: 1.2rem;
 
+}
+
+.block05__links {
+position: absolute;
+bottom: 24;
+left: 24;
 }
 
 .block05__links a {
-display: inline-block;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  background: white;
+  color: rgb(144, 210, 61, 0.7);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  text-align: center;
+  line-height: 1.5rem;
+
 }
 
-
+.block05__links i::before {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 .movie-list__header {
   color: #252525;
-  font-size: 50px;
+  font-size: 2.5rem;
   text-align: center;
   font-weight: 700;
-  margin: 75px;
+  margin: 3.75rem;
 }
 
 .movie-list__table {
   width: 100%;
   border-collapse: collapse;
-  border-radius: 15px;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
 .radius {
-  border-radius: 15px;
+  border-radius: 0.75rem;
 }
 
 .movie-list__table th {
   color: #ffffff;
   background-color: #a3cc40;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 800;
-  height: 75px;
+  height: 3.75rem;
   text-align: left;
 }
 
 .movie-list__table tbody tr:nth-child(3n+1) {
   color: #ffffff;
   background: #373737;
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 400;
-  height: 75px;
+  height: 3.75rem;
 }
 
 .movie-list__table tbody tr:nth-child(3n+2) {
   color: #ffffff;
   background: #4b4d4f;
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 400;
-  height: 75px;
+  height: 3.75rem;
 }
 
 .movie-list__table tbody tr:nth-child(3n) {
   color: #ffffff;
   background: #6c6c6c;
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 400;
-  height: 75px;
+  height: 3.75rem;
 }
 
 .movie-list__table td:first-child {
   text-align: center;
-  width: 230px;
+  width: 11.5rem;
 }
 
 .movie-list__table th:first-child {
   text-align: center;
-  width: 230px;
+  width: 11.5rem;
 }
 
 .movie-list__table td:nth-child(2) {
   text-align: left;
-  width: 670px;
-  padding-left: 70px;
+  width: 33.5rem;
+  padding-left: 3.5rem;
 }
 
 .movie-list__table th:nth-child(2) {
   text-align: left;
-  width: 670px;
-  padding-left: 70px;
+  width: 33.5rem;
+  padding-left: 3.5rem;
 }
 
 .movie-list__table th:last-child {
   text-align: center;
-  width: 130px;
+  width: 6.5rem;
 }
 
 .movie-list__table td:last-child {
   text-align: center;
-  width: 130px;
+  width: 6.5rem;
 }
 
 
 .remark {
 
 
-  font-size: 14px;
+  font-size: 0.7rem;
   font-weight: 300;
   text-align: center;
   vertical-align: middle;
@@ -305,7 +371,7 @@ display: inline-block;
   display: inline-block;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 13px solid #ffffff;
+  border-bottom: 0.65 solid #ffffff;
 
 }
 
@@ -319,15 +385,15 @@ display: inline-block;
 }
 
 .movie-list__table tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 0.75rem;
 }
 
 .movie-list__table tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 0.75rem;
 }
 
 .movie-list__table tfoot td {
-  padding: 40px 100px 0;
+  padding: 2rem 5rem 0;
 
 }
 
