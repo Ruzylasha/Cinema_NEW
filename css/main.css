@@ -37,7 +37,7 @@ body {
 }
 
 html {
-  font-size: 1,46vw;  /*20px при верстке установить: 20/1367=1.46vw */
+  font-size: 1.46vw;  /*20px при верстке установить: 20/1367=1.46vw */
 }
 
 .container {
@@ -268,6 +268,7 @@ flex: 0 0 33.33%;
   flex: 0 0 33%;
   padding: 26px;
   position: relative;
+    box-sizing: border-box;
 
 }
 
@@ -339,10 +340,15 @@ width: 100%;
 
 .block05__descr__inner {
   overflow: hidden;
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+    height: 100%;
 
 }
 
+.block05__links {
+  margin-top: auto;
+}
 .block05__links a {
   display: inline-block;
   width: 1.5rem;
