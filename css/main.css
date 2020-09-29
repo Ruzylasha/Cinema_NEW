@@ -107,7 +107,7 @@ color: yellow;
 }
 
 .block01__welcome_words p {
-  font-size: 2.5rem
+  font-size: 2.5rem;
   font-weight: 300;
 }
 .block01__city {
@@ -261,11 +261,7 @@ flex: 0 0 33.33%;
     padding-bottom: 3.5rem;
   }
 
-.block05__inner {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -1.3rem;
-}
+
 .block05__movie1 {
   flex: 0 0 33%;
   padding: 1.3rem;
@@ -509,7 +505,7 @@ width: 100%;
   
 }
 .svg {
-padding-right: 0.75rem
+padding-right: 0.75rem;
 padding-top: 3rem;
 padding-bottom: 1.75rem;
 }
