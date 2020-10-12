@@ -78,3 +78,14 @@ film_name_4.innerHTML = films[3].name;
 film_genre_4.innerHTML = films[3].genre;
 
 console.log(film_start_1)
+
+const form = document.getElementById('form');
+form.onsubmit = function (event) {
+    //Остановить стандартную обработку браузером;
+    event.preventDefault();
+}
+Object.keys(form.elements).forEach(function (element) {
+    if (form.elements[element].type != "submit") {
+        console.log(form.elements[element].name, form.elements[element].value)
+    }
+})
