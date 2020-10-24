@@ -37,7 +37,6 @@ document.querySelector('#button').onclick = function () {
 };
 
 //Задача 4; https://forum.jscourse.com/t/topic/462 
-//не могу сообразить как присвоить, а потом приплюсовать все суммы
 const a = ['Tor', 'Lokki', 'Odin',
     34, 'privet'
 ];
