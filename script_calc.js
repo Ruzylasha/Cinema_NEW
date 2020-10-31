@@ -36,6 +36,8 @@ for (let i = 0; i < keys.length; i++) {
                 input.innerHTML += btnVal;
                 decimalAdded = true;
             }
+        } else if (btnVal == 'C') {
+            input.textContent = ''
         } else {
             input.innerHTML += btnVal;
         }

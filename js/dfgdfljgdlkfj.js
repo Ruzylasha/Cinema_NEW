@@ -95,5 +95,5 @@ let d1 = [0, 2, 5, -4, 6, 22, -9, , -12, 13, 78];
 let filtered = d1.filter(function (el) {
     return el != null;
 });
-let max = Math.max.apply(null, filtered);
+let max = Math.max(...filtered);
 console.log(max);
