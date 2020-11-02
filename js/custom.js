@@ -1,9 +1,8 @@
-< script type = "text/babel" >
-    const initOwl = function () {
-        $(".owl-carousel").owlCarousel({
-            nav: true,
-        });
-    }
+const initOwl = function () {
+    $(".owl-carousel").owlCarousel({
+        nav: true,
+    });
+}
 
 $(document).ready(initOwl);
 
@@ -93,5 +92,39 @@ Object.keys(form.elements).forEach(function (element) {
     }
 })*/
 
-<
-/script>
+//закрытие формочки
+const closePopupButton = document.getElementById('popup-close');
+const popup = document.getElementById('popup');
+const openPopupButton = document.getElementById('popup-open');
+const sendForm = document.getElementById('submit');
+
+closePopupButton.onclick = function (event) {
+    event.preventDefault();
+    popup.classList.add('hidden'); //добавляет классы
+}
+
+openPopupButton.onclick = function (event) {
+    event.preventDefault();
+    popup.classList.remove('hidden'); //удаляет классы
+}
+
+sendForm.onclick = function (event) {
+    event.preventDefault();
+    let name = document.getElementById('name');
+    let nameParent = name.parentNode;
+    let email = document.getElementById('email');
+    let select = document.getElementById('select');
+    let agree = document.getElementById('agree');
+
+    if (!name.value) {
+        nameParent.classList.add('error'),
+            nameParent.getElementsByClassName('popup-error-message')[0].innerHTML = "заполните поле Имя"
+    }
+    if (!email.value) {
+        nameParent.classList.add('error'),
+            nameParent.getElementsByClassName('popup-error-message')[1].innerHTML = "заполните поле E-mail"
+
+    }
+
+    console.log(name.value, email.value, select.value, agree.value)
+}

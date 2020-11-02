@@ -31,10 +31,6 @@ function callBack(e) {
     }
 
     /** Обработчики */
-    function reset() {
-        console.warn("Function Reset started");
-        input.innerHTML = "";
-    }
 
     function showOperator() {
         let lastChar = inputVal[inputVal.length - 1];
@@ -74,6 +70,12 @@ function callBack(e) {
         }
         decimalAdded = false;
     }
+
+}
+
+function reset() {
+    console.warn("Function Reset started");
+    input.innerHTML = "";
 }
 
 

@@ -212,6 +212,7 @@
                             cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi
                             ratione
                             reprehenderit sequi sint, tenetur unde velit veniam!</p>
+                        <a href="#" id='popup-open' class="block04__button1">Получить подарок</a>
                     </div>
                 </div>
             </section>
@@ -474,8 +475,9 @@
 
                 <!--Четыре-с-половиной блок. Адреса и явки -->
                 <div>
-
-                    <img class="map" src="https://via.placeholder.com/1519x450?text=Map+1920x450" alt="">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8ed2b4a457ab16730aaa84aa01c379bc6e0bb70b2988b70bbee653bdb2d89d4d&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true">
+                    </script>
                 </div>
                 <div class="green">
                     <div class="footer">
@@ -626,7 +628,7 @@
             <section id="order">
                 <h2>Форма заказа билетов</h2>
 
-                <form id="form" action="order.php" autocomplete="on" method="post" enctype="multipart/form-data">
+                <form id="form-xxx" action="order.php" autocomplete="on" method="post" enctype="multipart/form-data">
                     <div>
                         Как вас зовут?
                         <input type="text" placeholder="Фамилия и имя" name="name" required> <br>
@@ -704,12 +706,53 @@
 
         <div class="arrow_up"></div>
         <div class="arrow_down"></div>
+
+    </div>
+    <div class="block10">
+        <div id="popup" class="popup hidden">
+            <form class="order-form">
+                <div id="popup-close" class="close">
+                    <i class="icon icon-cross" title="cross"></i>
+                </div>
+
+                <div>
+                    Как вас зовут?
+                    <input type="text" placeholder="Фамилия и имя" id="name" required class="error"> <br>
+                    <div class="popup-error-message">Ошибка при заполнении</div>
+                    Ваш адрес электронной почты
+                    <div class="popup-error-message">Ошибка при заполнении</div>
+                    <input type="email" placeholder="example@example.com" id="email" required class="error"> <br>
+                </div>
+
+                <div>
+                    Выбор места
+                    <select name="choice" id="select" required>
+                        <option value="1"> Место 1</option>
+                        <option value="2"> Место 2</option>
+                        <option value="3"> Место 3</option>
+                        <option value="3"> Место 4</option>
+                        <option value="3"> Место 5</option>
+                        <option value="3"> Место 6</option>
+                        <option value="3"> Место 7</option>
+                        <option value="3"> Место 8</option>
+                        <option value="3"> Место 9</option>
+                        <option value="3"> Место 10</option>
+                    </select> <br>
+                </div>
+                <div>
+                    <input type="checkbox" id="agree" name="agreement">
+                    <label for="согласие"> Подтверждаю согласие на обработку персональных данных в соответствии с <a
+                            href="#">Политикой обработки персональных данных данного сайта</a> </label>
+                </div>
+                <button type="submit" id="submit"> Заказать </button>
+                <br>
+            </form>
+        </div>
     </div>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel"></script>
     <script src="js/jquery.js"></script>
     <script src="js/plugins/owlcarousel/js/owl.carousel.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script type="text/babel" src="js/custom.js"></script>
 </body>
 
 </html>

@@ -55,24 +55,32 @@ document.querySelector('#button2').onclick = function () {
 
 const arr = [10, 12, 15, 21];
 for (var i = 0; i < arr.length; i++) {
-    (function (i) {
+    (function (j) {
         setTimeout(function () {
-            console.log('Index: ' + i + ', element: ' + arr[i]);
+            console.log('Index: ' + j + ', element: ' + arr[j]);
         }, 3000);
     })(i)
 }
 
+const arr1 = [10, 12, 15, 21];
+for (var i = 0; i < arr1.length; i++) {
+    setTimeout((function (j) {
+        return function () {
+            console.log('Индекс: ' + j + ', element: ' + arr1[j]);
+        }
+    })(i), 3000);
+}
 
 //ТЗ 18
 // вариант вопросы
 //https://habr.com/ru/company/ruvds/blog/340194/ - где прочитала
 
 // Спросить как обратиться к arr[i]
-//const arr = [10, 12, 15, 21];
-//for (var i = 0; i < arr.length; i++) {
-// setTimeout(function () {
-//return function () {
-//    console.log('Index: ' + i_local + ', element: ' + arr[i]);
-// }
-//}(i), 3000);
-//}
+const arr2 = [10, 12, 15, 21];
+for (var i = 0; i < arr2.length; i++) {
+    setTimeout((function (i_local) {
+        return function () {
+            console.log('Index: ' + i_local + ', element: ' + arr2[i_local]);
+        }
+    })(i), 3000);
+}

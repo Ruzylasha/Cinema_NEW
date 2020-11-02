@@ -13,7 +13,3 @@
         ]
     ]
 }
-
-{
-    "presets": ["@babel/preset-env"]
-}
